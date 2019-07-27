@@ -9,20 +9,12 @@
 <!--设置ico图标-->
 <Link Rel="YSLMS's download ico" href="https://yslms.github.io/favicon.ico">
 </head>
-<script type="text/javascript">
-<!--
-var request = (function (){
-    var obj = {};
-    var arr = window.location.search.slice(1).split("&");
-    for (var i = 0, len = arr.length; i < len; i++) {
-        var nv = arr[i].split("=");
-        obj[decodeURIComponent(nv[0]).toLowerCase()] = decodeURIComponent(nv[1]);
-    }
-    return obj;   
-})();
-location.href = request.page+".html";>
-//-->
-</script>
+$().ready(function(){
+var urlA = window.location.href;
+//通过字符串截取等方式获取url中的B网址
+var urlB=urlA.substring(10,urlA.length);//根据实际url内容设置sustring里的两个参数，这里只是例子
+window.location.href=urlB; //跳转到B网站
+});
 <img src="https://www.2345.com/images/logo/logo_QQ.png" onclick="javascript:location.href='https://www.2345.com/?klsyms233'"/>
 </body>
 </html>
