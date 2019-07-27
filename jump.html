@@ -11,10 +11,9 @@
 </head>
 <script type="text/javascript">
 <!--
-$().ready(function(){
-var urlA = window.location.href;
-//通过字符串截取等方式获取url中的B网址
-var urlB=urlA.substring(10,urlA.length);//根据实际url内容设置sustring里的两个参数，这里只是例子
+var url = decodeURI(window.location.href);
+var argsIndex = url .split("?url=");
+var urlb = argsIndex[1];
 window.location.href=urlB; //跳转到B网站
 });
 //-->
