@@ -8,4 +8,4 @@ var request = (function (){
     return obj;   
 })();
  
-window.location = request.page;
+window.location.href = request.page;
