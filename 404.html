@@ -1,0 +1,38 @@
+---
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<!--设置文档默认编码-->
+<meta charset="UTF-8">
+<!--网页的title-->
+<title>YSLMS's 404 Error</title>
+<!--设置ico图标-->
+<Link Rel="YSLMS's 404 Error" href="https://yslms.github.io/favicon.ico">
+</head>
+<center>
+<h1>发生什么了?<h1></br>
+<p>您访问了一个不存在的页面</p></br>
+<h2>我该怎么办?</h2></br>
+<p>去看别的网页</p></br>
+<p>在五秒后即将为您转跳到主页...</p>》</br>
+<!--javascript转跳到主页-->
+<script> 
+var t = 5; 
+function countDown(){ 
+var time = document.getElementById("time"); 
+t--; 
+time.value=t; 
+if (t<=0) { 
+location.href="http://yslms.github.io"; 
+clearInterval(inter); 
+}; 
+} 
+var inter = setInterval("countDown()",1000); 
+//window.onload=countDown; 
+</script>
+</center>	
+</body>	
+</html>
