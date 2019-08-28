@@ -1,6 +1,6 @@
 #Github加速下载
 219.76.4.4 s3.amazonaws.com
-52.219.4.104	s3-ap-northeast-1.amazonaws.com
+52.219.4.104 s3-ap-northeast-1.amazonaws.com
 54.231.249.17	s3-ap-southeast-2.amazonaws.com
 219.76.4.4 github-cloud.s3.amazonaws.com
 52.216.229.75 github-production-release-asset-2e65be.s3.amazonaws.com
