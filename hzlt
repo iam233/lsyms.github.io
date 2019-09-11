@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<!--设置文档默认编码-->
+<meta charset="UTF-8">
+<!--网页的title-->
+<title>YSLMS's download</title>
+<!--设置ico图标-->
+<Link Rel="黄州的电子劲爆灵堂" href="https://yslms.github.io/favicon.ico">
+</head>
+<center>
+<audio src="jb.mp3">
+您的浏览器不支持 audio 标签。
+</audio>
+<h1>欢迎来黄州的电子劲爆灵堂</h1>
+<p>香消玉殒,梦断北堂.很不幸,黄州已离去我,让我们永远怀念黄州<P>
+<img src="timg.jpg" align="sb" />
+</center>	
+</body>	
+</html>
