@@ -1,34 +1,5 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript">
-        var a_idx = 0; 
-jQuery(document).ready(function($) { 
-    $("body").click(function(e) { 
-        var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善"); 
-        var $i = $("<span/>").text(a[a_idx]); 
-        a_idx = (a_idx + 1) % a.length; 
-        var x = e.pageX, 
-        y = e.pageY; 
-        $i.css({ 
-            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, 
-            "top": y - 20, 
-            "left": x, 
-            "position": "absolute", 
-            "font-weight": "bold", 
-            "color": "#ff6651" 
-        }); 
-        $("body").append($i); 
-        $i.animate({ 
-            "top": y - 180, 
-            "opacity": 0 
-        }, 
-        1500, 
-        function() { 
-            $i.remove(); 
-        }); 
-    }); 
-});
-</script>
 <body>
 <head>
 <!--设置文档默认编码-->
@@ -36,7 +7,13 @@ jQuery(document).ready(function($) {
 <!--网页的title-->
 <title>Mrs's explosion mourninghall</title>
 <!--设置ico图标-->
-<Link Rel="Mrss explosion mourninghall" href="https://yslms.github.io/favicon.ico">
+<!--<Link Rel="Mrss explosion mourninghall" href="https://yslms.github.io/favicon.ico">
+<style type="text/css">
+body {color:red}
+h1 {color:#00ff00}
+p.ex {color:rgb(0,0,255)}
+</style>--->
+</head>
 </head>
 <center>
 <h1>欢迎来黄州&江展鹏女士的电子劲爆灵堂!</h1>
