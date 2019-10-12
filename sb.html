@@ -9,6 +9,35 @@
 <!--设置ico图标-->
 <Link Rel="Mrss explosion mourninghall" href="https://yslms.github.io/favicon.ico">
 </head>
+<script type="text/javascript">
+        var a_idx = 0; 
+jQuery(document).ready(function($) { 
+    $("body").click(function(e) { 
+        var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善"); 
+        var $i = $("<span/>").text(a[a_idx]); 
+        a_idx = (a_idx + 1) % a.length; 
+        var x = e.pageX, 
+        y = e.pageY; 
+        $i.css({ 
+            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, 
+            "top": y - 20, 
+            "left": x, 
+            "position": "absolute", 
+            "font-weight": "bold", 
+            "color": "#ff6651" 
+        }); 
+        $("body").append($i); 
+        $i.animate({ 
+            "top": y - 180, 
+            "opacity": 0 
+        }, 
+        1500, 
+        function() { 
+            $i.remove(); 
+        }); 
+    }); 
+});
+</script>
 <center>
 <h1>欢迎来黄州&江展鹏女士的电子劲爆灵堂!</h1>
 <p><i>Welcome to MrsHaung&Jiang's explosion mourninghall!<i></p>
@@ -56,34 +85,6 @@
 </br>
 <p>劲爆灵堂by LSYMS<p>
 <script>
- var a_idx = 0; 
-jQuery(document).ready(function($) { 
-$("body").click(function(e) { 
-var a = new Array("SB", "NMSL", "香消玉殒", "聪明一世糊涂一时", "cnm", "rz", "千古留存" ,"黄女士和江女士亲妈biss无疑", "梦碎河源", "英明一世", "喷人好手", "Biss"); 
-var $i = $("<span/>").text(a[a_idx]); 
-a_idx = (a_idx + 1) % a.length; 
-var x = e.pageX, 
-y = e.pageY; 
-$i.css({ 
-"z-index": 999999999999999999999999999999999999999999999999999999999999999999999, 
-"top": y - 20, 
-"left": x, 
-"position": "absolute", 
-"font-weight": "bold", 
-"color": "#ff6651" 
-}); 
-$("body").append($i); 
-$i.animate({ 
-"top": y - 180, 
-"opacity": 0 
-}, 
-1500, 
-function() { 
-$i.remove(); 
-}); 
-}); 
-});
-
 console.info("欢迎来到黄州&江展鹏女士的电子劲爆灵堂!");
 console.info("没什么好看的你可以关掉了qqq");
 console.info("by lsyms.");
