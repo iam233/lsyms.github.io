@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
     //点击body时触发事件
     $("body").click(function(e) {
     //需要显示的词语
-    var a = new Array("香消玉殒","梦断北堂", "千古留存", "英明一世糊涂一时","SB", "弱智", "NM$L","FW", "智障", "默哀", "可怜蛆", "傻屌");
+    var a = new Array("香消玉殒","梦断北堂", "千古留存", "英明一世糊涂一时","SB", "弱智", "NM$L","废物", "智障", "悼念", "可怜蛆", "傻屌");
     //设置词语给span标签
     var $i = $("<span/>").text(a[a_idx]);
     //下标等于原来下标+1  余 词语总数
@@ -36,4 +36,4 @@ jQuery(document).ready(function($) {
         });
     });
 })
-    ;
+;
