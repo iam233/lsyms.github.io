@@ -8,7 +8,7 @@ function watermark(settings) {
         watermark_rows:20,//水印行数
         watermark_cols:20,//水印列数
         watermark_x_space:120,//水印x轴间隔,100
-        watermark_y_space:70,//水印y轴间隔,50
+        watermark_y_space:80,//水印y轴间隔,50
         watermark_color:'#000000',//水印字体颜色
         watermark_alpha:0.3,//水印透明度
         watermark_fontsize:'18px',//水印字体大小
