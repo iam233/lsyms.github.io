@@ -17,12 +17,7 @@ p.ex {color:rgb(0,0,255)}
 </head>
 <script src="dn.js"></script><!--加载点击悼念--->
 <script src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script><!--加载JS库--->
-<!--ip--->
-<script src="/watermark.js"></script> 
-<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script> 
-<script>watermark.init({ watermark_txt: returnCitySN["cip"] })</script>
 <noscript>为了更好的体验请先打开JS</noscript>
-<!--/ip--->
 <!-- HEADER -->
 <div style="text-align:center; width:100%">
 <div style="margin:auto; text-align:center;">
@@ -119,6 +114,12 @@ p.ex {color:rgb(0,0,255)}
         <a href="https://web.pingping6.com/web.php?id=GiQY982">Background management of the website</a>
       </footer>
     </div>
+<!--watermark--->
+<script src="\watermark.js"></script> 
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script> 
+<script>watermark.init({ watermark_txt: returnCitySN["cip"] })</script>
+<script>watermark.load({ watermark_txt: returnCitySN["cip"] })</script>
+<!--watermark--->
 <script>
 console.info("欢迎来到袁文译的电子劲爆灵堂!");
 console.info("没什么好看的你可以关掉了qqq");
