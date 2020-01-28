@@ -20,14 +20,11 @@ p.ex {color:rgb(0,0,255)}
 <!--ip--->
 <script src="/watermark.js"></script> 
 <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script> 
-<script type="text/javascript">
-watermark({ watermark_txt:  returnCitySN["cip"] })//传入动态水印内容
-//onload时触发水印绘制
-window.onload=function(){
-watermark({ watermark_txt: returnCitySN["cip"] });
-};
-<noscript>为了更好的体验请先打开JS</noscript>
+<script>
+watermark.init({ watermark_txt: returnCitySN["cip"] })
+watermark.load({ watermark_txt: returnCitySN["cip"] })
 </script>
+<noscript>为了更好的体验请先打开JS</noscript>
 <!--/ip--->
 <!-- HEADER -->
 <div style="text-align:center; width:100%">
