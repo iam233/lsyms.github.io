@@ -120,6 +120,10 @@ border-radius:20px;list-style-type:square;font-size:1em; text-shadow:white 0px 0
 <script>watermark.load({ watermark_txt: returnCitySN["cip"] })</script>
 <!--watermark--->
 <script>
+function SlyarErrors() {
+return true;
+}
+window.onerror = SlyarErrors;
 function myBrowser(){
     var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
     var isOpera = userAgent.indexOf("Opera") > -1;
@@ -156,12 +160,11 @@ if ("Opera" == mb) {
 if ("Safari" == mb) {
     console.warn("Safari:为了网页稳定性,请勿调试JS");
 }
-
-
 console.log("%c欢迎来到袁文译的电子劲爆灵堂!"," text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15);font-size:5em")
 console.log("%c如需帮助请发送邮件至:yslms@vip.qq.com"," text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15);font-size:5em")
 console.info("没什么好看的你可以关掉了qqq");
 console.info("by lsyms.");
+
 </script>
 </div>
 </div>
