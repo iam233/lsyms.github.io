@@ -5,7 +5,6 @@
 <!--设置ico图标-->
 <Link Rel="LSYMS's download ico" href="https://lsyms.github.io/favicon.ico">
 <script type="text/javascript">
-//获取当前url？后 键值对集合指定键的值
 function getParamValue(key)
 {
     var url=window.location.href;
@@ -53,24 +52,45 @@ function toUrl(flag)
      window.location = flag;
 }
 //自动跳转
-toUrl(getParamValue("url"));
-//假如不加'http://'就代表是转跳到本站
-//点击链接进行跳转的
-//function toUrl2()
-//{
-//    flag = getParamValue("going")
-//    if(flag==null) flag = 'sj';
-//    window.location = flag;
-//}
+
+
+var m = 1;  //设置分
+var s = 5;    //设置秒
+function showtime(){
+    s = s-1;
+    if(s==0){
+        m = m -1;
+        s = 60
+    }
+    if(m==0){
+       toUrl(getParamValue("url"));
+    }
+      
+    if(m<0 && s==60){   //当时间为0分1秒时，暂停
+        clearInterval(settime);
+        
+    }
+    
+}
+clearInterval(settime);
+var settime = setInterval(function(){
+    showtime();
+},1000);
 </script>
 </head>
 <body>
 <!--
 <a href="javascript:()" onclick="toUrl2()">转跳</a>
 <p>示例:https://baidu.com/</p>
---->
 <h1>LSYMS's Url</h1>
 <p>没啥好说的,实例: "https://lsyms.tk/jump?url=https://baidu.com/" "https://baidu.com"可以替换成任何你想要的网址</p>
 <p>记得加"http""https"</p>
+--->
+<h1>请等候,正在转跳...</h1>
+<a href="tencent://Message/?uin=3316332397" target="_blank" ><font color="#FF0000">低价收广告联系QQ3316332397</font></a>
+<a href="tencent://Message/?uin=3316332397" target="_blank" ><font color="#FF0000">低价收广告联系QQ3316332397</font></a>
+<a href="tencent://Message/?uin=3316332397" target="_blank" ><font color="#FF0000">低价收广告联系QQ3316332397</font></a>
+<img src="https://www.2345.com/images/logo/logo_QQ.png" onclick="javascript:location.href='https://www.2345.com/?klsyms233'"/></img>
+<!--为什么有五秒你们都知道--->
 </body>
 </html>
