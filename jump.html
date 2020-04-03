@@ -1,28 +1,73 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Yslms download url jump</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LSYMS's Url</title>
+<!--设置ico图标-->
+<Link Rel="LSYMS's download ico" href="https://lsyms.github.io/favicon.ico">
+<script type="text/javascript">
+//获取当前url？后 键值对集合指定键的值
+function getParamValue(key)
+{
+    var url=window.location.href;
+    var paramsUrl = url.substring(url.indexOf("?")+1,url.length);
+    var params=[];
+    if(paramsUrl.indexOf("&")!=-1)
+    {
+        params=paramsUrl.split("&");    
+    }
+    else
+    {
+        if(key==paramsUrl.split("=")[0])
+        return paramsUrl.split("=")[1];
+        else return null;
+    }
+    var result=new Object();
+    result.key = new Array();
+    result.value= new Array();
+    result.get =function(value)
+    {
+        for(var x=0;x<this.key.length;x++)
+        {
+            if(this.key[x]==value)
+            {
+                return this.value[x];
+            }
+        }
+        return null;
+    }
+    for(var x=0;x<params.length;x++)
+    {
+        var temp = params[x].split("=");
+        result.key[x] = temp[0]; result.value[x]=temp[1];
+    }
+    return result.get(key);
+}
+
+
+//  参数名是什么就get什么  xxxx.php?str=new&ih=5&id=5666  getParamValue("id")  ->5666
+//alert(getParamValue("id"));
+//下面这个拼接函数自己封装下.
+function toUrl(flag)
+{
+     if(flag==null) return false;
+     window.location = flag;
+}
+//自动跳转
+toUrl(getParamValue("url"));
+//假如不加'http://'就代表是转跳到本站
+//点击链接进行跳转的
+//function toUrl2()
+//{
+//    flag = getParamValue("going")
+//    if(flag==null) flag = 'sj';
+//    window.location = flag;
+//}
+</script>
 </head>
 <body>
-<center>
-<!--<script src="lsyms.tk/fuck1.js" type="text/javascript"></script>
-<script>
-		var name = $.getUrlParam('url');
-		var id = $.getUrlParam('key');
- 
-		window.onload = function(){
-			$("#addurl").val(name);
-			$("#addkey").val(id);
-		}
-</script>
-<a id="addurl" href="#addurl">为了防止点击直接访问毒网,请点我继续.</a></br>
-<script src="lsyms.tk/test.js"></script>
-
--->
-
-<h1>因为技术原因,此功能未上线就已关闭</h1>
-<p><small><del>实际上是我测试的时候不管怎么弄,最后都是到lsyms.tk/{url}.网上找了一圈没有解决方法.</del></small></p>
-
-</center>
+<!--
+<a href="javascript:()" onclick="toUrl2()">转跳</a>
+<p>示例:https://baidu.com/</p>
+--->
 </body>
 </html>
